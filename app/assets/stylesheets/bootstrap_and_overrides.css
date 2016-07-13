@@ -6,6 +6,73 @@
   =require twitter-bootstrap-static/fontawesome
   */
 
-  body {
-  	font-family: 'Poppins', sans-serif;
-  }
+
+body,html {
+  height: 100%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  padding-top: 50px;
+}
+
+h1.custom-font {
+  color: #30373b;
+  font-weight: 700;
+  font-size: 3.8em;
+}
+
+.heavy-font {
+  font-weight: 700;
+}
+
+h3.custom-font-2 {
+  color: #949494;
+}
+
+.wide {
+  width:100%;
+  height:100%;
+  height:calc(100% - 1px);
+  background-image:url('http://res.cloudinary.com/manoylo/image/upload/v1468392489/bg_zsxirs.jpg');
+  background-size:cover;
+}
+
+.wide img {
+  width:100%;
+}
+
+.logo {
+  padding:25px;
+  text-align:center;
+}
+
+.line {
+  padding-top:20px;
+  white-space:no-wrap;
+  overflow:hidden;
+  text-align:center;
+}
+
+
+/* NAVIGATION */
+.navbar-white {
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.navbar {
+  border: none;
+}
+
+.navbar {min-height: 80px;}
+.navbar-brand {padding: 0 15px; height: 80px; line-height: 80px;}
+
+.nav.navbar-nav {
+  padding-top: 15px;
+}
+
+.nav>li>a {
+  color: #2d4245;
+  font-size: 1.25em;
+}
