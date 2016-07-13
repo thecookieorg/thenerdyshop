@@ -1,10 +1,19 @@
 Rails.application.routes.draw do
   
   devise_for :users
-  get '/about' => 'pages#about'
-  get '/portfolio' => 'pages#portfolio'
-  get '/products' => 'pages#products'
-  get '/contact' => 'pages#contact'
+  get '/who_we_are' => 'pages#who_we_are'
+  get '/what_we_do' => 'pages#what_we_do'
+  get '/turn_key_solutions' => 'pages#turn_key_solutions'
+  get '/delivery_business' => 'pages#delivery_business'
+  get '/social_media_manager' => 'pages#social_media_manager'
+  get '/project_manager' => 'pages#project_manager'
+  get '/niche_social_network' => 'pages#niche_social_network'
+  get '/e_learning_platform' => 'pages#e_learning_platform'
+  get '/two_sided_marketplace' => 'pages#two_sided_marketplace'
+  get '/crowdfunding_website' => 'pages#crowdfunding_website'
+  get '/online_dating_platform' => 'pages#online_dating_platform'
+  get '/business_directory' => 'pages#business_directory'
+  get '/careers' => 'pages#careers'
 
   root 'pages#index'
 
