@@ -6,6 +6,7 @@
     <%= f.label "Upload Post Image" %>
     <%= f.file_field :bimage, required: true, class: "form-control" %><br>
     <%= f.input :body, :as => :ckeditor, :input_html => { :ckeditor => {:toolbar => 'Full'} } %>
+    <%= f.input :keywords, autofocus: true, required: true, class: "form-control" %>
   </div>
 
   <div class="form-actions">

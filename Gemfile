@@ -32,6 +32,8 @@ gem 'cloudinary'
 gem 'ckeditor'
 gem 'font-awesome-rails'
 gem 'cancancan', '~> 1.10'
+gem 'meta-tags'
+gem 'friendly_id', '~> 5.1.0' # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
