@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   
+  get 'dashboards/index'
+
+  resources :posts
   devise_for :users
   get '/who_we_are' => 'pages#who_we_are'
   get '/what_we_do' => 'pages#what_we_do'
@@ -14,6 +17,10 @@ Rails.application.routes.draw do
   get '/online_dating_platform' => 'pages#online_dating_platform'
   get '/business_directory' => 'pages#business_directory'
   get '/careers' => 'pages#careers'
+
+  authenticated :user do
+    root 'dashboards#index', as: :authenticated_root
+  end
 
   root 'pages#index'
 

@@ -13,10 +13,15 @@
         
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><%= link_to "127.0.0.1", root_path %></li>
+        <li><%= link_to "HOME", root_path %></li>
         <li><%= link_to "WHO WE ARE", who_we_are_path %></li>
         <li><%= link_to "WHAT WE DO", what_we_do_path %></li>
         <li><%= link_to "TURN-KEY SOLUTIONS", turn_key_solutions_path %></li>
+        <li>
+          <p class="navbar-btn">
+            <%= link_to "GET NERDY", new_user_registration_path, class: "btn btn-success" %>
+          </p>
+        </li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
