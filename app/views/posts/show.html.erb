@@ -5,9 +5,11 @@
   <%= @post.title %>
 </p>
 
+<%= image_tag(@post.bimage.large.url) %>
+
 <p>
   <strong>Body:</strong>
-  <%= @post.body %>
+  <%= raw(@post.body) %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

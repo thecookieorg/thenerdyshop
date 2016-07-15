@@ -26,7 +26,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'twitter-bootstrap-rails'
 gem 'simple_form'
 gem 'devise'
+gem 'carrierwave'
+gem 'mini_magick'
 gem 'cloudinary'
+gem 'ckeditor'
 gem 'font-awesome-rails'
 gem 'cancancan', '~> 1.10'
 
